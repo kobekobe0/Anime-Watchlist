@@ -17,6 +17,8 @@ export function Home() {
     const upcomingUrl = 'https://api.jikan.moe/v3/season/later'
     const facebook = 'facebook.com'
 
+    console.log(airing)
+
     console.log(topAnime)
 
     const getAnime = async () => {
@@ -115,13 +117,13 @@ export function Home() {
                                 onClick={
                                     (setInLocalStorage(),
                                     () => {
-                                        watchlistExist(airing.mal_id)
+                                        watchlistExist(air.mal_id)
                                             ? alert(
                                                   'Anime is already in  waitlist'
                                               )
                                             : setWatchlist((watchlist) => [
                                                   ...watchlist,
-                                                  airing,
+                                                  air,
                                               ])
                                     })
                                 }

@@ -91,16 +91,6 @@ export function Watchlist() {
 
                                             <p>{watchlist.score}</p>
                                         </Typography>
-                                        <Typography
-                                            variant="body2"
-                                            color="textSecondary"
-                                            component="p"
-                                        >
-                                            {watchlist.synopsis.substring(
-                                                0,
-                                                120
-                                            ) + '...'}
-                                        </Typography>
                                     </CardContent>
                                 </CardActionArea>
                             </Link>
